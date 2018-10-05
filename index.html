@@ -7,7 +7,7 @@
   </head>
   <body>
     <img src="https://cdn2.cdnme.se/4370601/7-3/rosor_5366987f9606ee527fe89f28.gif">
-    <h1 class="gulfarg">Help me choose between...</h1>
+    <h1 class="clickheading">Help me choose between...</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Something">
@@ -28,6 +28,13 @@
       }
 
       $('.addOption').click(add_option)
+
+
+      var change_color = function() {
+        $('body').addClass('changeColor')
+      }
+
+      $('.clickheading').click(change_color)
 
     })
     </script>
